@@ -1,0 +1,10 @@
+---
+layout: default
+---
+
+{% for post in site.posts %}
+<div class="post">
+    <img class="post-image" src="{{ post.img }}"/>
+    <h3><a href="{{ page.url }}">{{ post.title }}</a></h3>
+</div>
+{% endfor %}
