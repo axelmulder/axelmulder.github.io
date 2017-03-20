@@ -1,5 +1,6 @@
 body {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+
 }
 
 .navbar {
@@ -15,32 +16,65 @@ body {
     min-height: 10px;
 }
 
+.navbar-brand:hover {
+    transition: 1 ease!important;
+    color: #585858;
+}
+
 .navbar-nav {
     float: right;
     height: 10px;
-    margin-top: 15px;
+    margin-top: 19px;
+}
+
+a.active {
+    color: black!important;
 }
 
 .navbar-nav > li > a {
+    transition: .25s ease;
     margin-left: 10px;
     min-height: 10px;
     font-weight: 400;
-    color: black;
+    color: #a3a3a3;
 }
+
+.navbar-nav > li > a:hover {
+    transition: .5s ease;
+    color: black!important;
+}
+
 
 div.post {
-    max-width: 20em;
+    display: inline-block;
+    width: 33%;
+    margin-bottom: 20px;
 }
 
-div.post > img.post-image {
-    min-width: 350px;
-    min-height: 350px;
-    max-width: 350px;
-    max-height: 350px;
+div.post > a > img.post-image {
+    transition: .5s ease;
+    display: block;
+    margin: auto;
+    object-fit: cover;
+    width: 350px;
+    height: 350px;
+}
+
+div.post > a > img.post-image:hover {
+    transition: .5s ease;
+    opacity: 0.7;
 }
 
 div.post > h3 {
+    font-weight: 300;
+    font-size: 15px;
     text-align: center;
+    margin-top: 15px;
+}
+
+div.post > h3 > a {
+    text-decoration: none;
+    color: black;
 }
 
 div.posts {
@@ -53,9 +87,15 @@ div.posts {
     column-gap:           0px;
 }
 
+@media (max-width: 1200px) {
+    div.post {
+        width: 45%;
+    }
+}
+
 @media (max-width: 1000px) {
-    .navbar-nav .nav-item {
-        align-content: center;
+    div.post {
+        width: 100%;
     }
     .navbar {
         padding-left: 0px;
@@ -66,10 +106,14 @@ div.posts {
     }
     .navbar-nav {
         float: none;
-
+        margin-top: 0px;
+        display: inline-block;
     }
 }
 @media (max-width: 550px) {
+    .navbar {
+        padding-right: 0px;
+    }
     .navbar-nav {
         height: auto;
     }
