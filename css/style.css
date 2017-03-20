@@ -1,15 +1,19 @@
 body {
     font-family: 'Open Sans', sans-serif;
-
 }
 
+/**********/
+/* NAVBAR */
+/**********/
 .navbar {
     padding-left: 50px;
+    padding-right: 50px;
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
 .navbar-brand {
+    transition: 0.5s ease;
     font-weight: 700;
     font-size: 45px;
     color: black;
@@ -17,8 +21,8 @@ body {
 }
 
 .navbar-brand:hover {
-    transition: 1 ease!important;
-    color: #585858;
+    transition: 0.5s ease;
+    color: #a3a3a3;
 }
 
 .navbar-nav {
@@ -44,11 +48,13 @@ a.active {
     color: black!important;
 }
 
-
+/********************/
+/* FRONT PAGE POSTS */
+/********************/
 div.post {
     display: inline-block;
     width: 33%;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 div.post > a > img.post-image {
@@ -74,7 +80,7 @@ div.post > h3 {
 
 div.post > h3 > a {
     text-decoration: none;
-    color: black;
+    color: #666666;
 }
 
 div.posts {
@@ -87,6 +93,28 @@ div.posts {
     column-gap:           0px;
 }
 
+/***********/
+/* CONTACT */
+/***********/
+.contact {
+    font-weight: 300;
+    margin-left: 50px;
+    text-decoration: none;
+    color: #666666;
+}
+
+.contact-social {
+    transition: .5s ease;
+}
+
+.contact-social:hover {
+    transition: .5s ease;
+    opacity: 0.5;
+}
+
+/************/
+/* RESIZING */
+/************/
 @media (max-width: 1200px) {
     div.post {
         width: 45%;
@@ -94,11 +122,9 @@ div.posts {
 }
 
 @media (max-width: 1000px) {
-    div.post {
-        width: 100%;
-    }
     .navbar {
         padding-left: 0px;
+        padding-right: 0px;
         text-align: center;
     }
     .navbar-brand {
@@ -108,6 +134,13 @@ div.posts {
         float: none;
         margin-top: 0px;
         display: inline-block;
+    }
+    div.post {
+        width: 100%;
+    }
+    .contact {
+        text-align: center;
+        margin-left: 0px;
     }
 }
 @media (max-width: 550px) {

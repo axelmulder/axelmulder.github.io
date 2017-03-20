@@ -1,5 +1,5 @@
 ---
 layout: post
-title:  "Nom"
+title:  "Sony Mobile"
 img: "http://i.imgur.com/zufkbuv.jpg"
 ---

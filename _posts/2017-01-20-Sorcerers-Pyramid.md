@@ -1,5 +1,5 @@
 ---
 layout: post
-title:  "Nom"
+title:  "Sorcerer's Pyramid"
 img: "http://i.imgur.com/zufkbuv.jpg"
 ---
