@@ -93,6 +93,20 @@ div.posts {
     column-gap:           0px;
 }
 
+/******/
+/* CV */
+/******/
+
+.cv-image > img {
+    padding-left: 50px;
+    float: left;
+    width: 30%;
+}
+
+.cv-text > b{
+    padding-left: 100px;
+}
+
 /***********/
 /* CONTACT */
 /***********/
@@ -149,14 +163,19 @@ div.posts {
     }
     .navbar-nav {
         height: auto;
+
     }
     .navbar-nav .nav-item {
+        margin-right: 0px;
         margin-left: 0px;
         float: none;
         margin: 0px!important;
     }
-    .navbar-nav > li {
+
+    .navbar-nav > li > a{
         float: none;
+        margin-left: 0px;
         display: block;
     }
+
 }
