@@ -1,5 +1,31 @@
-body > div > nav a {
-    font-family: fantasy;
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.navbar {
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 45px;
+    color: black;
+    min-height: 10px;
+}
+
+.navbar-nav {
+    float: right;
+    height: 10px;
+    margin-top: 15px;
+}
+
+.navbar-nav > li > a {
+    margin-left: 10px;
+    min-height: 10px;
+    font-weight: 400;
+    color: black;
 }
 
 div.post {
@@ -7,10 +33,53 @@ div.post {
 }
 
 div.post > img.post-image {
-    max-width: 20em;
-    max-height: 20em;
+    min-width: 350px;
+    min-height: 350px;
+    max-width: 350px;
+    max-height: 350px;
 }
 
 div.post > h3 {
     text-align: center;
+}
+
+div.posts {
+    line-height: 0;
+    -webkit-column-count: 3;
+    -webkit-column-gap:   0px;
+    -moz-column-count:    3;
+    -moz-column-gap:      0px;
+    column-count:         3;
+    column-gap:           0px;
+}
+
+@media (max-width: 1000px) {
+    .navbar-nav .nav-item {
+        align-content: center;
+    }
+    .navbar {
+        padding-left: 0px;
+        text-align: center;
+    }
+    .navbar-brand {
+        width: 100%;
+    }
+    .navbar-nav {
+        float: none;
+
+    }
+}
+@media (max-width: 550px) {
+    .navbar-nav {
+        height: auto;
+    }
+    .navbar-nav .nav-item {
+        margin-left: 0px;
+        float: none;
+        margin: 0px!important;
+    }
+    .navbar-nav > li {
+        float: none;
+        display: block;
+    }
 }
