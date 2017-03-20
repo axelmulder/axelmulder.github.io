@@ -35,9 +35,15 @@
                     <a class="nav-link" href="/projects/">PROJECTS</a>
                 </li>
                 {% endif %}
+                {% if page.url == "/photography/" %}
+                <li class="nav-item">
+                    <a class="nav-link active" href="/photography/">PHOTOGRAPHY</a>
+                </li>
+                {% else %}
                 <li class="nav-item">
                     <a class="nav-link" href="/photography/">PHOTOGRAPHY</a>
                 </li>
+                {% endif %}
                 {% if page.url == "/cv/" %}
                 <li class="nav-item">
                     <a class="nav-link active" href="/cv/">CV</a>
