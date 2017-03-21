@@ -16,53 +16,56 @@
     <div class="container">
         <nav class="navbar navbar-full">
             <a class="navbar-brand" href="/">AXEL MULDER</a>
-            <ul class="nav navbar-nav">
-                {% if page.url == "/" %}
-                <li class="nav-item">
-                    <a class="nav-link active" href="/">HOME <span class="sr-only">(current)</span></a>
-                </li>
-                {% else %}
-                <li class="nav-item">
-                    <a class="nav-link" href="/">HOME <span class="sr-only">(current)</span></a>
-                </li>
-                {% endif %}
-                {% if page.url == "/projects/" %}
-                <li class="nav-item">
-                    <a class="nav-link active" href="/projects/">PROJECTS</a>
-                </li>
-                {% else %}
-                <li class="nav-item">
-                    <a class="nav-link" href="/projects/">PROJECTS</a>
-                </li>
-                {% endif %}
-                {% if page.url == "/photography/" %}
-                <li class="nav-item">
-                    <a class="nav-link active" href="/photography/">PHOTOGRAPHY</a>
-                </li>
-                {% else %}
-                <li class="nav-item">
-                    <a class="nav-link" href="/photography/">PHOTOGRAPHY</a>
-                </li>
-                {% endif %}
-                {% if page.url == "/cv/" %}
-                <li class="nav-item">
-                    <a class="nav-link active" href="/cv/">CV</a>
-                </li>
-                {% else %}
-                <li class="nav-item">
-                    <a class="nav-link" href="/cv/">CV</a>
-                </li>
-                {% endif %}
-                {% if page.url == "/contact/" %}
-                <li class="nav-item">
-                    <a class="nav-link active" href="/contact/">CONTACT</a>
-                </li>
-                {% else %}
-                <li class="nav-item">
-                    <a class="nav-link" href="/contact/">CONTACT</a>
-                </li>
-                {% endif %}
-            </ul>
+            <button class="navbar-toggler hidden-md-up" type="button" data-toggle="collapse" data-target="#collapseNav">MENU</button>
+            <div class = "collapse navbar-toggleable-sm" id="collapseNav">
+                <ul class="nav navbar-nav">
+                    {% if page.url == "/" %}
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/">HOME <span class="sr-only">(current)</span></a>
+                    </li>
+                    {% else %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">HOME <span class="sr-only">(current)</span></a>
+                    </li>
+                    {% endif %}
+                    {% if page.url == "/projects/" %}
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/projects/">PROJECTS</a>
+                    </li>
+                    {% else %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="/projects/">PROJECTS</a>
+                    </li>
+                    {% endif %}
+                    {% if page.url == "/photography/" %}
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/photography/">PHOTOGRAPHY</a>
+                    </li>
+                    {% else %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="/photography/">PHOTOGRAPHY</a>
+                    </li>
+                    {% endif %}
+                    {% if page.url == "/cv/" %}
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/cv/">CV</a>
+                    </li>
+                    {% else %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="/cv/">CV</a>
+                    </li>
+                    {% endif %}
+                    {% if page.url == "/contact/" %}
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/contact/">CONTACT</a>
+                    </li>
+                    {% else %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact/">CONTACT</a>
+                    </li>
+                    {% endif %}
+                </ul>
+            </div>
         </nav>
         {{  content }}
 

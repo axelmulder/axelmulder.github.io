@@ -145,8 +145,9 @@ div.posts {
         width: 100%;
     }
     .navbar-nav {
+        margin-top: 7.5px;
         float: none;
-        margin-top: 0px;
+        /*margin-top: 0px;*/
         display: inline-block;
     }
     div.post {
@@ -156,14 +157,15 @@ div.posts {
         text-align: center;
         margin-left: 0px;
     }
+
 }
-@media (max-width: 550px) {
+@media (max-width: 767px) {
     .navbar {
         padding-right: 0px;
+        padding-bottom: 25px;
     }
     .navbar-nav {
         height: auto;
-
     }
     .navbar-nav .nav-item {
         margin-right: 0px;
@@ -176,6 +178,19 @@ div.posts {
         float: none;
         margin-left: 0px;
         display: block;
+    }
+
+    .navbar-toggler {
+        margin-top: 9px;
+        width: 100%;
+    }
+
+    .navbar-toggler:focus, .navbar-toggler:active:focus, .navbar-toggler.active:focus {
+        outline: 0 none;
+    }
+
+    .collapse {
+        border-top: 1px solid #ebebeb;
     }
 
 }
