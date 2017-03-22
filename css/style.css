@@ -181,16 +181,24 @@ div.posts {
     }
 
     .navbar-toggler {
+        transition: 0.25s ease;
+        cursor: pointer;
         margin-top: 9px;
         width: 100%;
+        color: black;
+    }
+
+    button.navbar-toggler:hover {
+        transition: 0.5s ease;
+        color: #a3a3a3;
     }
 
     .navbar-toggler:focus, .navbar-toggler:active:focus, .navbar-toggler.active:focus {
         outline: 0 none;
+        border-bottom: 1px solid #ebebeb;
     }
 
-    .collapse {
-        border-top: 1px solid #ebebeb;
+    .collapsed:focus {
+        border-bottom: 1px solid #FFFFFF;
     }
-
 }
